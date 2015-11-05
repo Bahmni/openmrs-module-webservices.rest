@@ -67,7 +67,7 @@ public class OrderSetResource1_11 extends MetadataDelegatingCrudResource<OrderSe
      */
     @Override
     protected NeedsPaging<OrderSet> doGetAll(RequestContext context) {
-        return new NeedsPaging<OrderSet>(Context.getOrderSetService().getOrderSets(context.getParameter("orderType"), context.getIncludeAll()), context);
+        return new NeedsPaging<OrderSet>(Context.getOrderSetService().getOrderSets(context.getIncludeAll()), context);
     }
 
     @Override
