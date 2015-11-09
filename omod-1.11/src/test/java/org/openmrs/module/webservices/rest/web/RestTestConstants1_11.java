@@ -15,5 +15,8 @@ package org.openmrs.module.webservices.rest.web;
 
 
 public class RestTestConstants1_11 {
-	
+    public final static String TEST_DATASET = "customTestDataset1_11.xml";
+    public final static String ORDER_SET_MEMBER_ATTRIBUTE_TYPE_UUID = "f08ba64b-ea17-4a41-nfdr-9dfc59b0c60a";
+    public final static String ORDER_SET_UUID = "f08ba64b-ea57-4a41-nfdr-9dfc59b0c98";
+
 }

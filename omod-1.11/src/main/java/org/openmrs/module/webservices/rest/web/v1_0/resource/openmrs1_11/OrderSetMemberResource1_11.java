@@ -57,6 +57,7 @@ public class OrderSetMemberResource1_11 extends DataDelegatingCrudResource<Order
         if (rep instanceof DefaultRepresentation) {
             DelegatingResourceDescription description = new DelegatingResourceDescription();
             description.addProperty("orderSetMemberId");
+            description.addProperty("orderSetMemberAttributes", Representation.DEFAULT);
             description.addProperty("uuid");
             description.addProperty("orderType");
             description.addProperty("orderTemplate");
@@ -69,6 +70,7 @@ public class OrderSetMemberResource1_11 extends DataDelegatingCrudResource<Order
         } else if (rep instanceof FullRepresentation) {
             DelegatingResourceDescription description = new DelegatingResourceDescription();
             description.addProperty("orderSetMemberId");
+            description.addProperty("orderSetMemberAttributes", Representation.FULL);
             description.addProperty("uuid");
             description.addProperty("orderType");
             description.addProperty("orderTemplate");
@@ -94,6 +96,7 @@ public class OrderSetMemberResource1_11 extends DataDelegatingCrudResource<Order
         description.addProperty("sequence");
         description.addProperty("concept");
         description.addProperty("voided");
+        description.addProperty("orderSetMemberAttributes");
         return description;
     }
 
