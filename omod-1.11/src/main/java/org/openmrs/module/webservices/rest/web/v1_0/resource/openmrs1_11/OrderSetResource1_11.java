@@ -116,4 +116,12 @@ public class OrderSetResource1_11 extends MetadataDelegatingCrudResource<OrderSe
         d.addProperty("retireReason");
         return d;
     }
+
+    @Override
+    protected NeedsPaging<OrderSet> doSearch(RequestContext context){
+        String drugConceptUuid = context.getRequest().getParameter("drugConceptUuid");
+        String attributeType = context.getRequest().getParameter("attributeType");
+        String attributeValue = context.getRequest().getParameter("attributeValue");
+        return new NeedsPaging<OrderSet>(Context.getOrderSetService().getOrderSetsByConceptAndAttributeTypeAndAttributeValue(drugConceptUuid, attributeType, attributeValue), context);
+    }
 }
