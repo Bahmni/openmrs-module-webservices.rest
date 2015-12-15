@@ -19,15 +19,15 @@
 
 	<distributionManagement>
 		<repository>
-			<id>openmrs-repo-modules</id>
-			<name>Modules</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules/</url>
+			<id>bahmni-artifactory-release</id>
+			<name>OpenMRS release repo</name>
+			<url>http://bahmnirepo.thoughtworks.com/artifactory/libs-release-local</url>
 		</repository>
-        <snapshotRepository>
-            <id>openmrs-repo-snapshots</id>
-            <name>OpenMRS Snapshots</name>
-            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
+		<snapshotRepository>
+			<id>bahmni-artifactory</id>
+			<name>bahmni-artifactory-snapshots</name>
+			<url>http://bahmnirepo.thoughtworks.com/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<modules>
@@ -453,6 +453,7 @@
 			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
 		</repository>
 	</repositories>
+
 
 	<pluginRepositories>
 		<pluginRepository>
